@@ -22,6 +22,7 @@ class max_heap:
             if(not self.__greather(c,i)): break;
             self.e[i],self.e[c] = self.e[c],self.e[i];
             i = c;c = 2*i+1
+            
     def show(self): print(self.e);
     def enqueue(self,e):
         self.e.append(e);
